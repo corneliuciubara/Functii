@@ -70,3 +70,20 @@ def tdc(x,y,z):
             res.append(i)
     return res
 print(tdc(a,b,c))
+def sec(x,y,z):
+    str1 = "Prima solutie este"
+    str2 = "A doua solutie este"
+    str3 = "  Si  "
+    lst = []
+    d = y**2 - 4*x*z
+    if d>0:
+        s1 = (-y-(math.sqrt(d)))/(2*x)
+        s2 = (-y+(math.sqrt(d)))/(2*x)
+        strs = str(str1) + str(s1) + str(str3) + str(str2) + str(s2)
+    if d<0:
+        return "Delta este negativ"
+    if d == 0:
+        s1 = s2 = -y/2*x
+    lst.append(strs)
+    return lst
+print(sec(a,b,c))
