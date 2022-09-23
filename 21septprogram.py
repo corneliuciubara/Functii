@@ -70,6 +70,10 @@ def tdc(x,y,z):
             res.append(i)
     return res
 print(tdc(a,b,c))
+
+#cei mai mici 3 multipli comuni
+
+#ax2+bx+x
 def sec(x,y,z):
     str1 = "Prima solutie este"
     str2 = "A doua solutie este"
