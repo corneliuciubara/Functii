@@ -62,3 +62,11 @@ def commDiv(x, y, z):
     return res
 
 print("Toti divizorii comuni:", commDiv(a, b, c))
+
+def tdc(x,y,z):
+    res = []
+    for i in range(2, int(min(x,y,z)/2+1), 2):
+        if (x%i==0) and (y%i==0) and (z%i==0):
+            res.append(i)
+    return res
+print(tdc(a,b,c))
