@@ -81,6 +81,17 @@ for i in range(3):
     tmp = cmmmc(a,b,c,tmp+1)
     print("Multiplul", i, ":", tmp)
 
+#triunghi
+a = int(input("a="))
+b = int(input("b="))
+c = int(input("c="))
+def ft(x, y ,z):
+    if ((x+y>z) and (x+z>y) and (y+z>x)):
+        return x+y+z
+    else: 
+        return "Nu e triunghi"
+print(ft(a,b,c))
+
 #ax2+bx+x
 def sec(x,y,z):
     str1 = "Prima solutie este"
