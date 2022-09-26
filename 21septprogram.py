@@ -82,12 +82,12 @@ for i in range(3):
     print("Multiplul", i, ":", tmp)
 
 #triunghi
-a = int(input("a="))
-b = int(input("b="))
-c = int(input("c="))
 def ft(x, y ,z):
+    p = (x+y+z)/2
+    aria = math.sqrt(p*(p-a)*(p-b)*(p-c))
     if ((x+y>z) and (x+z>y) and (y+z>x)):
         return x+y+z
+        return aria
     else: 
         return "Nu e triunghi"
 print(ft(a,b,c))
