@@ -54,22 +54,14 @@ def min(x, y, z):
 print("Numarul minim:", min(a, b, c))
 
 #toti divizorii comuni
-def commDiv(x, y, z):
+def tdc(x, y, z):
     res = []
     for i in range(2, int(min(x, y, z) / 2 + 1), 2):
         if (x % i == 0) and (y % i==0) and (z % i == 0):
             res.append(i)
     return res
 
-print("Toti divizorii comuni:", commDiv(a, b, c))
-
-def tdc(x,y,z):
-    res = []
-    for i in range(2, int(min(x,y,z)/2+1), 2):
-        if (x%i==0) and (y%i==0) and (z%i==0):
-            res.append(i)
-    return res
-print(tdc(a,b,c))
+print("Toti divizorii comuni:", tdc(a, b, c))
 
 #cei mai mici 3 multipli comuni
 
