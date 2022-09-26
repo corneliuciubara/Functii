@@ -64,6 +64,21 @@ def tdc(x, y, z):
 print("Toti divizorii comuni:", tdc(a, b, c))
 
 #cei mai mici 3 multipli comuni
+def cmmmc(x, y, z, mare=0):
+    if mare==0:
+        mare = nax(x,y,z)
+    lcm = x*y*z
+    while True:
+        if ((mare % x == 0) and (mare % y == 0) and (mare % z == 0)):
+            lcm = mare
+            break
+        mare += 1
+    return lcm
+print("Cinci multipli comuni", cmmmc(a b,c))
+tmp = 0
+for i in range(3):
+    tmp = cmmmc(a,b,c,tmp+1)
+    print("Multiplul", i, ":", tmp)
 
 #ax2+bx+x
 def sec(x,y,z):
